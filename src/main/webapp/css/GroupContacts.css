@@ -1,0 +1,8 @@
+.GroupContacts tr .glyphicon-remove {
+  cursor: pointer;
+  display: none;
+}
+.GroupContacts tr:hover .glyphicon-remove {
+  display: block;
+}
+

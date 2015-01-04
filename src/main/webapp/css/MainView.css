@@ -1,0 +1,26 @@
+/* --------- Variables --------- */
+/* --------- /Variables --------- */
+/* --------- Mixins --------- */
+/* --------- /Mixins --------- */
+.MainView .MainView-content {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.MainView .MainView-leftPanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+}
+.MainView .MainView-contentPanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 180px;
+}
+

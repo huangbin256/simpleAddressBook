@@ -1,0 +1,35 @@
+<script id="GroupContacts" type="text/html">
+<div class="GroupContacts">
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th style="width:32px">ID</th>
+				<th>Email</th>
+				<th style="width:50px"></th>
+			</tr>
+		</thead>
+		<tbody>
+
+		</tbody>
+	</table>
+</div>
+</script>
+
+
+<!-- Table Content -->
+<script id="GroupContacts-tbody" type="text/html">
+<tr>
+	<td></td>
+	<td>
+	<input type="text" class="newContact form-control" placeholder="New contact">
+	</td>
+	<td></td>
+</tr>
+{{#each contacts}}
+	<tr data-entity="Contact" data-entity-id="{{id}}">
+		<td>{{id}}</td>
+		<td><a href="#contact/{{id}}!groupId={{../id}}">{{email}}</a></td>
+		<td><i class="glyphicon glyphicon-remove"></i></td>
+	</tr>
+{{/each}}
+</script>

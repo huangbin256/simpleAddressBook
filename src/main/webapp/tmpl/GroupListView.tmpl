@@ -1,0 +1,24 @@
+<script id="GroupListView" type="text/html">
+<div class="GroupListView">
+	<h2>Groups</h2>
+	<ul>
+	{{> GroupListView-lis}}
+	</ul>
+	<div class="add-new-group">
+		<a class="action">Add New Group</a>
+		<input type="text" class="form-control" >
+	</div>
+</div>
+</script>
+
+<script id="GroupListView-lis" type="text/html">
+		<li class="group" data-entity="Group" data-entity-id="">
+			<a href="#">All</a>
+		</li>
+		{{#each groups}}
+		<li class="group" data-entity="Group" data-entity-id="{{id}}">
+			<a href="#!groupId={{id}}">{{name}}</a>
+			<i class="glyphicon glyphicon-remove"></i>
+		</li>
+		{{/each}}
+</script>

@@ -1,0 +1,12 @@
+<div class="GroupContact" data-entity="Contact" data-entity-id="{{id}}">
+	<h2>#{{id}} - <span class="dx dx-title"  data-prop="Contact.email" data-editable="">{{email}}</span></h2>
+	
+	<h4>Groups </h4>
+	<div class="contact-groups">
+		{{#each contactGroups}}
+			<div>
+			<input type="checkbox" class="contact-group" {{#if checked }}checked{{/if}} data-group-id="{{id}}" /> {{name}}
+			</div>
+		{{/each}}
+	</div>
+</div>

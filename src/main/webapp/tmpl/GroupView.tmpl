@@ -1,0 +1,23 @@
+<!-- Main Group View Frame -->
+<script id="GroupView" type="text/html">
+	<div class="GroupView" data-entity="Group" data-entity-id="{{group.id}}">
+		<header>
+			<h2 data-prop="Group.name" {{#if group.id}}data-editable=""{{/if}}>{{group.name}}</h2>
+		</header>
+	
+		<div class="GroupView-content">
+			<ul class="nav nav-tabs">
+				<li class="tab-contacts">
+					<a href="#!groupId={{group.id}}">Contacts</a>
+				</li>
+			</ul>
+			<div class="tabctn">
+			</div>
+		</div>
+	</div>
+</script>
+
+
+<script id="GroupView-contact-tab-li" type="text/html">
+<li class="tab-contact"><a href="#contact/{{contactId}}!groupId={{groupId}}">#{{contactId}}</a></li>
+</script>
